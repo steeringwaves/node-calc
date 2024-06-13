@@ -1,6 +1,6 @@
 {
   "name": "@steeringwaves/node-calc",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "node.js calculator",
   "author": "steeringwaves",
   "license": "ISC",
