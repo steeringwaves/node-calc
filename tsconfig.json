@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"*": ["node_modules/*", "*"]
+		},
+		"allowJs": true,
+		"checkJs": false,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"target": "es5"
+	},
+	"exclude": [
+		"node_modules",
+		".git",
+	]
+}

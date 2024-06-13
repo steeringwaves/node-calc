@@ -1,0 +1,61 @@
+{
+  "name": "@steeringwaves/node-calc",
+  "version": "0.0.1",
+  "description": "node.js calculator",
+  "author": "steeringwaves",
+  "license": "ISC",
+  "homepage": "https://github.com/steeringwaves/node-calc",
+  "keywords": [],
+  "engines": {
+    "node": ">=12"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./bin/node-calc",
+  "bin": {
+    "node-calc": "./bin/node-calc"
+  },
+  "preferGlobal": true,
+  "scripts": {
+    "calc": "./src/index.js",
+    "bin": "./bin/node-calc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example": "./src/index.js 'PI / 180'",
+    "build": "esbuild src/index.js --bundle --platform=node --minify --tsconfig=jsconfig.json --outfile=bin/node-calc --keep-names=true --banner:js='#!/usr/bin/env node'",
+    "esbuild": "esbuild",
+    "ci": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/steeringwaves/node-calc"
+  },
+  "dependencies": {
+    "decimal.js": "^10.4.3",
+    "hex2dec": "^1.1.2",
+    "lodash": "^4.17.21",
+    "mathjs": "^13.0.0",
+    "yargs": "^17.3.1"
+  },
+  "devDependencies": {
+    "@steeringwaves/eslint-config": "^1.0.4",
+    "@steeringwaves/prettier-config": "^1.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.32.0",
+    "esbuild": "^0.21.5",
+    "eslint": "^8.45.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.15.1",
+    "jest": "^28.1.1",
+    "jest-codemods": "^0.26.3",
+    "jest-junit": "^14.0.0",
+    "modclean": "^3.0.0-beta.1",
+    "prettier": "^2.8.8"
+  }
+}
