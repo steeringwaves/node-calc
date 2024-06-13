@@ -39,11 +39,11 @@ const knownFunctions = [
 		description: "Determines whether a value is a safe integer."
 	},
 	{
-		name: "hexToDec",
+		name: "hex2Dec",
 		description: "Converts a hexadecimal number to a decimal number."
 	},
 	{
-		name: "decToHex",
+		name: "dec2Hex",
 		description: "Converts a decimal number to a hexadecimal number."
 	},
 	{
@@ -283,8 +283,8 @@ const _ = require("lodash");
 
 const imports = {
 	// help,
-	hexToDec: hex2dec.hexToDec,
-	decToHex: hex2dec.decToHex,
+	hex2Dec: hex2dec.hexToDec,
+	dec2Hex: hex2dec.decToHex,
 	deg2rad: (v) => mathjs.unit(v, "deg").to("rad").value,
 	rad2deg: (v) => mathjs.unit(v, "rad").to("deg").value,
 	mean: _.mean,
